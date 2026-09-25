@@ -1,0 +1,11 @@
+# Core runtime. Install the QNN wheel supplied for your ONNX Runtime/QNN SDK build.
+numpy>=1.26,<3
+opencv-python-headless>=4.9,<5
+PyQt6>=6.7,<7
+onnxruntime-qnn>=1.18; platform_machine == "ARM64"
+
+# Alternative for machines without QNN. Do not install both ORT provider wheels.
+# onnxruntime-directml>=1.18; platform_system == "Windows"
+
+# Optional model validation/export tooling (not required to run the app).
+# onnx>=1.16,<2

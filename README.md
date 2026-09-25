@@ -111,3 +111,9 @@ README.md
 The sample decoder is intentionally conservative. Qualcomm AI Hub models can expose different output layouts, quantization scales, and post-processing contracts. Adapt `_decode_detections` for the exact exported model contract before production use, and validate numerical accuracy on representative camera footage.
 
 The application uses `opencv-python-headless` because the GUI is provided by PyQt6. Do not install a second OpenCV wheel into the same environment.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+Copyright (c) 2026 Atibali Saiyed
